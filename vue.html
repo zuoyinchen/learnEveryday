@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div v-if="Math.random() > 0.5" v-for="item in 10">
+            kkkkkk
+        </div>
+        <div v-else>
+            ppppppp
+        </div>
+        <navigation-link url="/profile">
+          Your Profile
+        </navigation-link>  
+        <navigation-link url="/profile">
+          <!-- 添加一个 Font Awesome 图标 -->
+          <span class="fa fa-user"></span>
+          Your Profile
+        </navigation-link>
+    </div>
+</body>
+</html>
+<script>
+var app = new Vue({
+  el: '#app',
+  data: {
+    message: 'Hello Vue!',
+    test: ''
+  },
+  computed: {
+    message1: function(){
+        return this.message + 12312312312
+    }
+  },
+  created() {
+    // this.test = '3333'
+    console.log(app, '222')
+  },
+  mounted() {
+      console.log(this.app, 'asdjk')
+  }
+})
+console.log(app.config)
+// app.test = 11111
+// console.log(app.test, 'asdjk')
+</script>
