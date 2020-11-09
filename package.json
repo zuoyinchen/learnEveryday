@@ -1,0 +1,19 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "有点累，但是感觉哪里都不能说，太难了",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zuoyinchen/learnEveryday.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zuoyinchen/learnEveryday/issues"
+  },
+  "homepage": "https://github.com/zuoyinchen/learnEveryday#readme"
+}
