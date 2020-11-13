@@ -10,7 +10,7 @@
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import HelloWorld  from '@/components/HelloWorld.vue'
 // import '@/qiuqiu/protoclass'
 // import '@/qiuqiu/box2d'
 // import '@/qiuqiu/main'
