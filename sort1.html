@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+let arr = [1, 5, 3, 2, 7, 3]
+let mySort = function(arr) {
+    let len = arr.length
+    for(let i = 0; i < len - 1; i++) {
+        for(let j = 0; j < len - i - 1; j ++) {
+            if (arr[j] < arr[j+1]) {
+                [arr[j], arr[j+1]] = [arr[j+1], arr[j]]
+            }
+        }
+    }
+    return arr
+}
+console.log(mySort(arr))
+let quickSort = function(arr) {
+    let len = arr.length
+    if (len < 1) return arr
+    let index = Math.floor(len/2)
+    let pivot = arr.splice(index, 1)[0]
+    let left = []
+    let right = []
+    for (let i = 0; i < len; i++) {
+        if (pivot > arr[i]) {
+            left.push(arr[i])
+        } else {
+            right.push(arr[i])
+        }
+    }
+    // return Array.concat(left,pivot,right)
+}
+
+</script>
